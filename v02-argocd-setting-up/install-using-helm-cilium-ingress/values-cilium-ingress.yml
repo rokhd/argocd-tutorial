@@ -1,0 +1,8 @@
+server:
+  ingress:
+    enabled: true
+    annotations:
+      ingress.cilium.io/force-https: "true"
+      ingress.cilium.io/tls-passthrough: "false"
+    ingressClassName: cilium
+    hostname: "devops.rokh"
